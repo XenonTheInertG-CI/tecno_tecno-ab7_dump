@@ -1,0 +1,11 @@
+# Copyright 2019 Transsion Inc
+# Author qianwen.guo
+# Add mlock feature for performance
+
+on property:sys.boot_completed=1
+    start mlock
+
+service mlock vendor/bin/mlock
+    class core
+    user root
+    group root system

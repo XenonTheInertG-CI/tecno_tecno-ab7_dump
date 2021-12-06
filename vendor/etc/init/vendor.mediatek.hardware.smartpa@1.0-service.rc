@@ -1,0 +1,4 @@
+service smartpa-hal-1-0 /vendor/bin/hw/vendor.mediatek.hardware.smartpa@1.0-service
+    class hal
+    user system
+    group system
